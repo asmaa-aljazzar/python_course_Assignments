@@ -12,7 +12,7 @@ class bcolors:
 #calculate the length of string
 print (bcolors.HEADER + "length of banana: " + bcolors.ENDC)
 length = len ("banana")
-print (len)
+print (length)
 
 print ("\n")
 
@@ -24,7 +24,7 @@ print ("\n")
 
 # check if subtext is in not the text
 print (bcolors.HEADER + "Check if work [nana] is not in [banana]"  + bcolors.ENDC)
-print ("nana" in "banana")
+print ("nana" not in "banana")
 
 print ("\n")
 
