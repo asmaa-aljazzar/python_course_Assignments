@@ -15,3 +15,5 @@ data = {
     "Name": ['Alice', 'Bob', 'Charlie'], # Col1
     "Age": [34, 16, 27],                 # Col2
 }
+
+df = pd.DataFrame (data, labels)
