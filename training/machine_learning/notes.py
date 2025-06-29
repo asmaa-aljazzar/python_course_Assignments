@@ -85,14 +85,17 @@
 #? Evaluation Metrics
 # ============================
 #              Predicted
-#             |  Pos  |  Neg
-# ----------------------------
-# Actual  Pos |  TP   |  FN
-#         Neg |  FP   |  TN
+#              _______ _______
+#             |  Pos  |  Neg  |
+# -----------------------------
+# Actual  Pos |  TP   |  FN   |
+#              ---------------  
+#         Neg |  FP   |  TN   |
 # ============================
-
-# TP = True Positive
-# FN = False Negative
-# FP = False Positive
-# TN = True Negative
+#
+# TP = True Positive  -> Test says Positive, and reality Positive.
+# FN = False Negative -> Test says Nigative, and reality Positive.
+# FP = False Positive -> Test says Positive, and reality Nigative.
+# TN = True Negative  -> Test says Nigative, and reality Nigative.
+#
 # region
