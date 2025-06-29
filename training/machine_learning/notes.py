@@ -61,7 +61,9 @@
 #
 # region
 #
-#? Dataset Splitting
+#? Dataset Splitting 
+#? [file for each one]: example: 70% training, 15% validation, 15% testing: togather will be a full dataset.
+#
 #* Training Data
 #!       It is the set of data that is used to train and make the model learn the hidden features/patterns in the data.
 #       In each epoch, the same training data is fed to the neural network architecture repeatedly, 
@@ -79,7 +81,8 @@
 #       To put it simply, it answers the question of "How well does the model perform?"
 #
 # region
-#
-# 
+#   
+#? Evaludation Metrics
+#   d
 #
 # region
