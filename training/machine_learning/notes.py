@@ -82,7 +82,17 @@
 #
 # region
 #   
-#? Evaludation Metrics
-#   d
-#
+#? Evaluation Metrics
+# ============================
+#              Predicted
+#             |  Pos  |  Neg
+# ----------------------------
+# Actual  Pos |  TP   |  FN
+#         Neg |  FP   |  TN
+# ============================
+
+# TP = True Positive
+# FN = False Negative
+# FP = False Positive
+# TN = True Negative
 # region
