@@ -110,7 +110,8 @@
 #   (TP + TN) / (TP + TN + FP + FN)
 #* Precision      :
 #   TP / (TP + FP)       -> How many predicted positives are actually positive
-#* Recall (TPR)   :
+#* Recall (TPR)   : 
+#! Important
 #    TP / (TP + FN)       -> How many actual positives are correctly predicted
 #* F1 Score       :
 #    2 * (Precision * Recall) / (Precision + Recall)
