@@ -58,3 +58,25 @@
 #? reinforcement Learning
 # interacts with environment and learn from them based on #! rewards 
 # Action => env => Reward.
+#
+# region
+#
+#? Dataset Splitting
+#* Training Data
+#       It is the set of data that is used to train and make the model learn the hidden features/patterns in the data.
+#       In each epoch, the same training data is fed to the neural network architecture repeatedly, 
+#       and the model continues to learn the features of the data.
+#       The training set should have a diversified set of inputs so that the model is trained in all scenarios 
+#       and can predict any unseen data sample that may appear in the future.
+#* Validation
+#       The validation set is a set of data, separate from the training set, that is used to validate our model performance during training.
+#       This validation process gives information that helps us tune the model’s hyperparameters and configurations accordingly. 
+#       It is like a critic telling us whether the training is moving in the right direction or not.
+#       The model is trained on the training set, and, simultaneously, the model evaluation is performed on the validation set after every epoch.
+#* Test Data
+#       the trianing don't show it when training.
+#       The test set is a separate set of data used to test the model after completing the training.
+#       It provides an unbiased final model performance metric in terms of accuracy, precision, etc.
+#       To put it simply, it answers the question of "How well does the model perform?"
+#
+# region
