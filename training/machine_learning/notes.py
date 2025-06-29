@@ -84,13 +84,13 @@
 #   
 #? Evaluation Metrics
 # ============================
-#              Predicted
-#              _______ _______
-#             |  Pos  |  Neg  |
-# -----------------------------
-# Actual  Pos |  TP   |  FN   |
-#              ---------------  
-#         Neg |  FP   |  TN   |
+#!              Predicted
+#?              _______ _______
+#?             |  Pos  |  Neg  |
+#? ------------------------------
+#* Actual  Pos |  TP   |  FN   |
+#?              ---------------  
+#*         Neg |  FP   |  TN   |
 # ============================
 #
 # TP = True Positive  -> Test says Positive, and reality Positive.
@@ -99,3 +99,51 @@
 # TN = True Negative  -> Test says Nigative, and reality Nigative.
 #
 # region
+#
+# =========================
+#? Evaluation Metrics in ML
+# =========================
+#
+#? Classification Metrics
+# ----------------------
+#* Accuracy       :
+#   (TP + TN) / (TP + TN + FP + FN)
+#* Precision      :
+#   TP / (TP + FP)       -> How many predicted positives are actually positive
+#* Recall (TPR)   :
+#    TP / (TP + FN)       -> How many actual positives are correctly predicted
+#* F1 Score       :
+#    2 * (Precision * Recall) / (Precision + Recall)
+#* ROC-AUC        :
+#    Area under the ROC curve (TPR vs. FPR)
+#* Confusion Matrix:
+#    Matrix showing TP, FP, TN, FN
+#* Log Loss       :
+#    -log(predicted probability for true class), averaged
+
+#? Regression Metrics
+# ------------------
+#* MSE (Mean Squared Error)     :
+#    mean((y_true - y_pred)^2)
+#* RMSE (Root Mean Squared Error):
+#    sqrt(MSE)
+#* MAE (Mean Absolute Error)    :
+#    mean(abs(y_true - y_pred))
+#* R² Score (Coefficient of Determination):
+#    1 - (SS_res / SS_tot)
+
+#? Clustering Metrics
+# ------------------
+#* Silhouette Score : 
+# Measures cohesion and separation of clusters
+#* ARI (Adjusted Rand Index):
+#  Similarity between clustering and ground truth
+#* NMI (Normalized Mutual Info):
+#  Shared information between labels and clusters
+
+#? Ranking Metrics (Information Retrieval / Recommenders)
+# -------------------------------------------------------
+#* Precision@k     :
+#  Precision calculated at top-k predictions
+#* Recall@k       
+#* region
