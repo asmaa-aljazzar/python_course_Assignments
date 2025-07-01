@@ -147,4 +147,55 @@
 #* Precision@k     :
 #  Precision calculated at top-k predictions
 #* Recall@k       
-#* region
+#* region\
+#
+#? Regression:
+#  Weather forecasting, the model is trained on the past data,
+#  and once the training is completed, 
+#  it can easily predict the weather for future days.
+#*  X: independent variables - (features) are the inputs used to predict a dependent variable (target).
+#*  Y: dependent variables -  the outcome the model aims to predict.
+# region
+#? Simple Linear Regression
+#   Statistical method that is used for predictive analysis. 
+#   if a single independent var is used to predict the value of a numerical dependent variable then such a Linear Regression algorithm is called SLR.
+#   if more than one independent var is used to predict te valure of a numerical dependent var, then its called Multiple Linear Regression.
+#! 2 colomns
+#   X with one independent variable حجم البيت
+#   Y with one dependent variable سعر البيت
+#? تقاطع حجم البيت مع النقطه يعطيني السعرالحقيقي
+# The line should be near as posibile from all points in the chart. 
+# Strong relationship when points are near to eachother.
+#* Y is all actual values
+#* Y^ what is predict
+#
+# region 
+#
+#? Linear Regression Line
+# A linear line showing the relationship between the dependent and independent variables, Can show two types of relationship.
+#TODO: Positive Linear Relationship:
+#   If the dependent variable increases on the Y-axis and independent variable increases on x-axis.
+#TODO: Nigative Linear Relationship:
+#   If the dependent variable decreases on the Y-axis and independent variable decreases on x-axis.
+# 
+# region 
+# 
+#? MSE: Mean Square Error 
+#*  to measure the average squared difference between actual (true) values and predicted values in regression problems.
+#   - Always non-negative: Values closer to 0 are better (indicating a smaller error).
+#   - Units: The same as the square of the original data’s units.
+#   - Sensitive to outliers: Squaring the errors magnifies large deviations.
+#!  MSE = (1⁄n) × Σ(yᵢ − ŷᵢ)²
+# Smaller MSE = better modle
+# 
+# region 
+# 
+#? R-squared (R²) — Coefficient of Determination
+#* R² is a statistical metric that measures how well a regression model explains the variance in the dependent variable.
+#* It tells you the proportion of the variance in the target variable that is predictable from the independent variables.
+#! R² = 1 - (SS_res / SS_tot)
+# where: => SS_res = sum((y_i - y_hat_i)^2)
+#        => SS_tot = sum((y_i - mean(y))^2)
+# 
+# region
+# #
