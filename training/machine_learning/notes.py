@@ -197,5 +197,6 @@
 # where: => SS_res = sum((y_i - y_hat_i)^2)
 #        => SS_tot = sum((y_i - mean(y))^2)
 # 
+#.
 # region
 # #
